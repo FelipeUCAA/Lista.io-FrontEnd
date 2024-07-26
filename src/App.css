@@ -1,0 +1,201 @@
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  box-sizing: border-box;
+  gap: 20px;
+}
+
+.form-container, .list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .form-container, .list-container {
+    width: 50%;
+  }
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: rgba(12, 102, 180, 0.667);
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button:hover {
+  background-color: rgba(12, 102, 180, 0.667);
+  color:#ffffff;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  gap: 10px; /* Espaçamento entre os itens */
+  overflow-x: auto;
+}
+
+li {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: left;
+  min-width: 150px; /* Define uma largura mínima para cada item */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Adiciona espaço entre o conteúdo e os botões */
+  height: 200px; /* Define uma altura fixa para cada item */
+}
+
+li .button-group {
+  display: flex;
+  justify-content: space-between; /* Distribui os botões uniformemente */
+  margin-top: auto; /* Move os botões para o final do item */
+}
+
+li button {
+  padding: 5px 10px;
+  background-color: #dc3545;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+li button.edit-button {
+  background-color: #007bff;
+}
+
+li button:hover {
+  background-color: #c82333;
+}
+
+li button.edit-button:hover {
+  background-color: #0270e6;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.login-container form div {
+  margin-bottom: 15px;
+}
+
+.login-container form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.login-container form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.login-container button {
+  padding: 10px;
+  border: none;
+  background-color: #ffffff;
+  color: rgba(12, 102, 180, 0.667);
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.login-container button:hover {
+  background-color: rgba(12, 102, 180, 0.667);
+  color: #ffffff;
+}
+
+.list-container p {
+  font-size: 18px;
+  color: #808080;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  align-items: center;
+}
